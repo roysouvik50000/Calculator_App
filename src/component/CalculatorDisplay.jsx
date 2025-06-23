@@ -1,14 +1,14 @@
 import { CalculatorContext } from "../calculatorContext";
 import { useContext } from "react";
 export default function CalculatorDisplay() {
-  const { result, setResult, inputText, setInputText } =
+  const { result, setResult, inputText, setInputText , displayText, setDisplayText} =
     useContext(CalculatorContext);
   return (
     <div className="flex flex-col justify-center">
       <input
         className="bg-amber-200 w-80 rounded-t-2xl p-2 lg:mt-1.5  outline-none text-3xl"
         type="text"
-        value={inputText}
+        value={displayText}
         name="calulartorDisplay"
         id="calulartorDisplay"
         readOnly
