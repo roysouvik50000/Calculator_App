@@ -34,43 +34,10 @@ export default function Calculator() {
   { btnText: "=", btnValue: "=" }
 ]
 
-  // const allCalculatorButton = [
-  //   {
-  //     btnText:"sin",
-  //     btnValue:"Math.sin("
-  //   },
-  //   "cos",
-  //   "tan",
-  //   "π",
-  //   "log",
-  //   "e",
-  //   "√",
-  //   "^",
-  //   "AC",
-  //   "%",
-  //   "⌫",
-  //   "/",
-  //   "7",
-  //   "8",
-  //   "9",
-  //   "*",
-  //   "4",
-  //   "5",
-  //   "6",
-  //   "-",
-  //   "1",
-  //   "2",
-  //   "3",
-  //   "+",
-  //   "00",
-  //   "0",
-  //   ".",
-  //   "=",
-  // ];
   return (
     <>
       <div
-        className="border-y-amber-300 lg:border-4 lg:rounded-3xl py-3 px-3 lg:h-[500px] min-h-screen lg:w-96 max-w-screen mx-auto lg:mt-10 flex flex-col items-center justify-around bg-black"
+        className="border-y-amber-300 lg:border-4 lg:rounded-3xl py-3 px-3 lg:h-96 min-h-screen lg:w-96 max-w-screen mx-auto flex flex-col items-center justify-around bg-black"
         id="calculator"
       >
         <h1 className="font-bold text-yellow-500 lg:text-2xl text-xl">CALCULATOR</h1>

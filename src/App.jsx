@@ -11,7 +11,7 @@ function App() {
       <CalculatorContext.Provider
         value={{ result, setResult, inputText, setInputText }}
       >
-        <div className="max-h-screen lg:pt-5 lg:bg-linear-to-r/hsl from-indigo-900 to-teal-950">
+        <div className="min-h-screen lg:bg-linear-to-r/hsl from-indigo-900 to-teal-950">
           <Calculator />
         </div>
       </CalculatorContext.Provider>

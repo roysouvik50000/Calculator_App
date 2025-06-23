@@ -1,8 +1,15 @@
 import { CalculatorContext } from "../calculatorContext";
 import { useContext } from "react";
-export default function CalculatorButton({ buttonText , buttonValue}) {
-  const {setResult, inputText, setInputText } =
-    useContext(CalculatorContext);
+import * as motion from "motion/react-client";
+
+export default function CalculatorButton({ buttonText, buttonValue }) {
+  const { setResult, inputText, setInputText } = useContext(CalculatorContext);
+  const box = {
+    borderRadius: 50,
+    width:48,
+    height:48,
+    margin:8,
+}
 
   const buttonClickHandeler = (btx) => {
     if (btx === "=") {
@@ -24,15 +31,21 @@ export default function CalculatorButton({ buttonText , buttonValue}) {
   return (
     <>
       <div className="w-1/4 flex justify-center">
-        <button
-          className="bg-amber-300 p-3 m-2 rounded-full h-12 w-12 cursor-pointer text-xl font-black"
-          type="button"
-          onClick={() => {
-            buttonClickHandeler(buttonValue);
-          }}
-        >
-          {buttonText}
-        </button>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        style={box}
+      >
+          <button
+            className="bg-amber-300 p-3 m-2 rounded-full h-12 w-12 cursor-pointer text-xl font-black"
+            type="button"
+            onClick={() => {
+              buttonClickHandeler(buttonValue);
+            }}
+          >
+            {buttonText}
+          </button>
+        </motion.div>
       </div>
     </>
   );
