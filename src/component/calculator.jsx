@@ -6,10 +6,10 @@ export default function Calculator() {
   const allCalculatorButton = [
   { btnText: "sin", btnValue: "Math.sin(Math.PI/180*" , displayValue:"sin(" },
   { btnText: "cos", btnValue: "Math.cos(Math.PI/180*" , displayValue:"cos("},
-  { btnText: "tan", btnValue: "Math.tan(Math.PI/180*" , displayValue:"cos("},
+  { btnText: "tan", btnValue: "Math.tan(Math.PI/180*" , displayValue:"tan("},
   { btnText: ")", btnValue: ")" , displayValue:")"},
-  { btnText: "log", btnValue: "Math.log10(" , displayValue:""},
-  { btnText: "e", btnValue: "Math.E" , displayValue:""},
+  { btnText: "log", btnValue: "Math.log10(" , displayValue:"log10("},
+  { btnText: "e", btnValue: "Math.E" , displayValue:"e"},
   { btnText: "√", btnValue: "Math.sqrt(" , displayValue:"√"},
   { btnText: "^", btnValue: "**" , displayValue:"^"},
   { btnText: "AC", btnValue: "AC" , displayValue:""},

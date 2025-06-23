@@ -8,7 +8,7 @@ export default function CalculatorButton({ buttonText, buttonValue , displayValu
     borderRadius: 50,
     width:48,
     height:48,
-    margin:8,
+    margin:12,
 }
 
   const buttonClickHandeler = (btx , displayValue ) => {
@@ -18,7 +18,7 @@ export default function CalculatorButton({ buttonText, buttonValue , displayValu
         setInputText("");
         setDisplayText("!!ERR");
       } else {
-        setResult(res);
+        setResult(res.toFixed(3));
       }
     } else if (btx === "AC") {
       setInputText("");
@@ -41,7 +41,7 @@ export default function CalculatorButton({ buttonText, buttonValue , displayValu
         style={box}
       >
           <button
-            className="bg-amber-300 p-3 text-center rounded-full h-12 w-12 cursor-pointer text-xl font-black"
+            className="bg-amber-300 p-2 text-center rounded-full h-12 w-12 cursor-pointer text-xl font-black"
             type="button"
             onClick={() => {
               buttonClickHandeler(buttonValue , displayValue);
